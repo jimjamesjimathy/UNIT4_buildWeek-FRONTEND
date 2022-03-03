@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Logout = () => {
-  const { push } = useHistory();
+  const { push } = useNavigate();
 
   const token = localStorage.getItem('token');
 
   useEffect(() => {
     if(token) {
       localStorage.removeItem('token');
-      push('/login');
+      push('/');
     } else {
-      push('/login');
+      push('/');
     } 
   })
   
