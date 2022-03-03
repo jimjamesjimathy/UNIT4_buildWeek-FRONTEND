@@ -1,9 +1,10 @@
 import React from 'react';
+import '../CSS/Home.css';
 
 export default function Home() {
     return(
-        <div className='Home'>
-            <h1>Howdy!</h1>
-        </div>
+        <section className='Home'>
+            <h1>anywhere fitness</h1>
+        </section>
     )
 };

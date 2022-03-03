@@ -1,0 +1,20 @@
+.header {
+    position: fixed;
+    top: 0;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: dodgerblue;
+    z-index: 999;
+}
+nav {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo {
+    width: 70%;
+}

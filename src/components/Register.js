@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axiosWithAuth from '../utils/axiosWithAuth';
 import url from './URL';
 
@@ -14,7 +14,7 @@ const initialError ={
 }
 
 const Register = () => {
-  const { push } = useHistory();
+  const { push } = useNavigate();
   const [ formValues, setFormValues ] = useState(initialFormValues);
   const [ error, setError ] = useState(initialError);
 
