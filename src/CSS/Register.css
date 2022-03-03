@@ -1,0 +1,14 @@
+form {
+    position: relative;
+    top: 10vh;
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.register-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}

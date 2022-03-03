@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axiosWithAuth from '../utils/axiosWithAuth';
 import url from './URL';
+import '../CSS/Register.css';
 
 const initialFormValues = {
   username: '',
   password: '',
-  email: ''
+  email: '',
+  role_type: ''
 }
 
 const initialError ={
@@ -42,6 +44,15 @@ const Register = () => {
     return(
       <form className='items-list-wrapper' onSubmit={handleSubmit}>
         <div className='register-wrapper'>
+        <label>Email:
+          <input
+            value={formValues.email}
+            name='email'
+            type='email'
+            placeholder='Enter your email here'
+            onChange={handleChange}
+          />
+        </label>
         <label>Username:
           <input 
             value={formValues.username}
@@ -60,12 +71,12 @@ const Register = () => {
             onChange={handleChange}
           />
         </label>
-        <label>Email:
-          <input
-            value={formValues.email}
-            name='email'
-            type='email'
-            placeholder='Enter your email here'
+        <label>Role:
+          <input 
+            value={formValues.role_type}
+            name='role_type'
+            type='text'
+            placeholder='Enter role type'
             onChange={handleChange}
           />
         </label>

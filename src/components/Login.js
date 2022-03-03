@@ -13,7 +13,7 @@ const errorValues = {
 }
 
 export default function Login() {
-    const { push } = useNavigate();
+    const { push } = useNavigate('/');
     const [ formValues, setFormValues ] = useState(initialFormValues);
     const [ error, setError ] = useState(errorValues);
 
@@ -29,13 +29,12 @@ export default function Login() {
       axiosWithAuth().post(`${url}api/auth/login`, formValues)
         .then(res => {
           localStorage.setItem('token', res.data.token);
-          console.log(res);
           // update push below to dashboard route when complete
           push('/');
         })
         .catch(err => {
           setError({
-            error: err.response.data.message          });
+            error: err.response.data.message});
         })
       }
 

@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Logout = () => {
   const { push } = useNavigate();
-
   const token = localStorage.getItem('token');
 
   useEffect(() => {
@@ -13,7 +12,7 @@ const Logout = () => {
     } else {
       push('/');
     } 
-  })
+  });
   
   return (
     <div></div>

@@ -21,8 +21,8 @@ function App() {
           <Route path='/users' element={<UsersList user={<User />}/>} />
           <Route exact path='/login' element={<Login />} />
           <Route exact path='register' element={<Register />} />
-          {/* <PrivateRoute exact path='/home' component={Home} />
-          <PrivateRoute exact path='/logout' component={Logout} /> */}
+          {/* <PrivateRoute exact path='/home' component={<Home />} />
+          <PrivateRoute exact path='/logout' component={<Logout />} /> */}
         </Routes>
       </div>
   );
