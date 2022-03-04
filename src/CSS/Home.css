@@ -5,19 +5,15 @@
     background-position: center;
     background-size: cover;
 }
-.wrapper {
+.Home-content {
     position: relative;
     top: 17vh;
-    height: 55%;
+    height: 70%;
     width: 55%;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.7);
     text-align: center;
     border-radius: 3px;
-}
-.hero-text {
-    display: flex;
-    flex-flow: row wrap;
 }
 .hero-text {
     height: 33%;
