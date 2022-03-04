@@ -18,8 +18,7 @@ export default function Header() {
 
       <a href='/'>
       <h3>Anywhere Fitness</h3>
-      </a>  
-      <h3>Anywhere Fitness</h3>  
+      </a>
     </div>
     <nav>
       {token ? 
