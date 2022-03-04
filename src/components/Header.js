@@ -16,7 +16,9 @@ export default function Header() {
   return (
   <div className='header'>
     <div className='logo'>
-      <h3>anywhere fitness</h3>  
+      <a href='/'>
+      <h3>Anywhere Fitness</h3>
+      </a>  
     </div>
     <nav>
       {token ? 
