@@ -5,7 +5,7 @@
     background-position: center;
     background-size: cover;
 }
-.Home-content {
+.wrapper {
     position: relative;
     top: 17vh;
     height: 55%;
@@ -14,6 +14,8 @@
     background-color: rgba(255, 255, 255, 0.7);
     text-align: center;
     border-radius: 3px;
+}
+.hero-text {
     display: flex;
     flex-flow: row wrap;
 }
@@ -31,6 +33,10 @@
     width: 89%;
     margin: 0 auto;
     font-size: 1.55rem;
+}
+span,
+h1 {
+    width: 100%;
 }
 h1,
 h3 {

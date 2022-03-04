@@ -15,9 +15,9 @@ const errorValues = {
 }
 
 export default function Login() {
-    const { push } = useNavigate();
     const [ formValues, setFormValues ] = useState(initialFormValues);
     const [ error, setError ] = useState(errorValues);
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
       setFormValues({
@@ -32,7 +32,7 @@ export default function Login() {
         .then(res => {
           localStorage.setItem('token', res.data.token);
           // update push below to dashboard route when complete
-          push('/');
+          navigate('/');
         })
         .catch(err => {
           setError({

@@ -9,22 +9,23 @@ export default function Header() {
   function removeToken() {
     if(token) {
       localStorage.removeItem('token');
-    } else {
       navigate('/');
     }
   }
   return (
   <div className='header'>
     <div className='logo'>
+
       <a href='/'>
       <h3>Anywhere Fitness</h3>
       </a>  
+      <h3>Anywhere Fitness</h3>  
     </div>
     <nav>
       {token ? 
       <nav>
         <Link className='link' to='/'>Home</Link>
-        <Link className='link' onclick={removeToken} to='/'>Logout</Link>
+        <Link className='link' onClick={removeToken} to='/'>Logout</Link>
       </nav>
       :  
       <nav>
