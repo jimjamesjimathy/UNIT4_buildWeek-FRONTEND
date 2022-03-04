@@ -5,7 +5,7 @@
     background-position: center;
     background-size: cover;
 }
-.Home-content {
+.wrapper {
     position: relative;
     top: 17vh;
     height: 55%;
@@ -14,13 +14,14 @@
     background-color: rgba(255, 255, 255, 0.7);
     text-align: center;
     border-radius: 3px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
 }
+.hero-text {
+    display: flex;
+    flex-flow: row wrap;
+}
+span,
 h1 {
-    font-size: 5rem;
-    letter-spacing: 7px;
+    width: 100%;
 }
 p {
     font-size: 1.35rem;
