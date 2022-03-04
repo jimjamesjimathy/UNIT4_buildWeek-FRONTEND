@@ -1,12 +1,11 @@
-.login {
+form {
     position: relative;
-    top: 2vh;
-    height: inherit;
+    top: 5vh;
+    height: calc(100vh - 5vh);
     width: 100%;
-    overflow: hidden;
-    background-image: url('../../public/images/login-register.jfif');
-    background-position: center;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .register-wrapper {
     height: 75%;
@@ -28,13 +27,6 @@ input {
 }
 button {
     padding: 2% 10%;
-    margin-top: 9%;
     border: none;
     border-radius: 10px;
-    transition: all 500ms;
-    font-weight: 600;
-    font-size: 1.15rem;
-}
-button:hover {
-    background-color: darkgrey;
 }

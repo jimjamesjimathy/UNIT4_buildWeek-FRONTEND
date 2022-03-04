@@ -15,6 +15,10 @@ export default function Header() {
   return (
   <div className='header'>
     <div className='logo'>
+
+      <a href='/'>
+      <h3>Anywhere Fitness</h3>
+      </a>  
       <h3>Anywhere Fitness</h3>  
     </div>
     <nav>

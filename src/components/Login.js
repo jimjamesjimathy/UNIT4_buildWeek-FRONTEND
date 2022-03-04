@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axiosWithAuth from '../utils/axiosWithAuth';
 import url from './URL';
+import '../CSS/Login.css';
+
 
 const initialFormValues = { 
   username: '',
@@ -39,7 +41,8 @@ export default function Login() {
       }
 
     return(
-      <form onSubmit={handleSubmit}>
+      <section className='login'>
+        <form onSubmit={handleSubmit}>
         <div className='register-wrapper'>            
         <label>Username:
           <input 
@@ -63,6 +66,7 @@ export default function Login() {
         <p>{error.error}</p>
         </div>
       </form>
+      </section>
     )
 };
 

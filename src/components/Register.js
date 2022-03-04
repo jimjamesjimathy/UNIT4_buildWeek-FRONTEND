@@ -42,7 +42,8 @@ const Register = () => {
     }
 
     return(
-      <form className='items-list-wrapper' onSubmit={handleSubmit}>
+      <section className='login'>
+        <form onSubmit={handleSubmit}>
         <div className='register-wrapper'>
         <label>Email:
           <input
@@ -83,7 +84,8 @@ const Register = () => {
         <button>Register</button>
         <p>{error.error}</p>
         </div>
-      </form>
+      </form>  
+      </section>
     )
 }
 

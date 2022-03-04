@@ -19,13 +19,29 @@
     display: flex;
     flex-flow: row wrap;
 }
+.hero-text {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 3rem;
+}
+.hero-paragraph {
+    height: 33%;
+    width: 89%;
+    margin: 0 auto;
+    font-size: 1.55rem;
+}
 span,
 h1 {
     width: 100%;
 }
-p {
-    font-size: 1.35rem;
-    text-align: center;
+h1,
+h3 {
+    margin: 0;
+    padding: 0;
 }
 .home-links {
     width: 50%;
@@ -45,7 +61,7 @@ p {
     transition: all 500ms ease-in-out;
 }
 .link1:hover {
-    background-color: red;
+    background-color: lightgreen;
 }
 .link2:hover {
     background-color: dodgerblue;
