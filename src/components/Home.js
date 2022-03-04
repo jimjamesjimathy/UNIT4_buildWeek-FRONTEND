@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../CSS/Home.css';
 
 export default function Home() {
+    const token = localStorage.getItem('token');
+
+    useEffect(() => {
+        if(token) {
+            localStorage.removeItem('token');
+        } else {
+
+        }
+    })
+
     return(
         <section className='Home'>
             <div className='Home-content'>
