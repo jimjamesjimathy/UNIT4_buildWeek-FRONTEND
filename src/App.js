@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 
 //components
@@ -21,8 +21,9 @@ function App() {
           <Route path='/users' element={<UsersList user={<User />}/>} />
           <Route exact path='/login' element={<Login />} />
           <Route exact path='register' element={<Register />} />
-          {/* <PrivateRoute exact path='/home' component={Home} />
-          <PrivateRoute exact path='/logout' component={Logout} /> */}
+          <Route path='/logout' element={<Navigate replace to='/' />} />
+          {/* <PrivateRoute exact path='/home' component={<Home />} />
+          <PrivateRoute exact path='/logout' component={<Logout />} /> */}
         </Routes>
       </div>
   );

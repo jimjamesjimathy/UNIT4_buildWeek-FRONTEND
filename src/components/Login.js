@@ -29,18 +29,17 @@ export default function Login() {
       axiosWithAuth().post(`${url}api/auth/login`, formValues)
         .then(res => {
           localStorage.setItem('token', res.data.token);
-          console.log(res);
           // update push below to dashboard route when complete
           push('/');
         })
         .catch(err => {
           setError({
-            error: err.response.data.message          });
+            error: err.response.data.message});
         })
       }
 
     return(
-      <form className='items-list-wrapper' onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <div className='register-wrapper'>            
         <label>Username:
           <input 
@@ -65,5 +64,5 @@ export default function Login() {
         </div>
       </form>
     )
-}
+};
 

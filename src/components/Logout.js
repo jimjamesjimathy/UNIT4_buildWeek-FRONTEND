@@ -2,21 +2,19 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Logout = () => {
-  const { push } = useNavigate();
-
+  const navigate = useNavigate();
   const token = localStorage.getItem('token');
 
   useEffect(() => {
     if(token) {
       localStorage.removeItem('token');
-      push('/');
     } else {
-      push('/');
+      navigate('/');
     } 
-  })
+  },);
   
   return (
-    <div></div>
+    <></>
   )
 }
 
