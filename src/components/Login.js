@@ -13,7 +13,7 @@ const errorValues = {
 }
 
 export default function Login() {
-    const { push } = useNavigate('/');
+    const { push } = useNavigate();
     const [ formValues, setFormValues ] = useState(initialFormValues);
     const [ error, setError ] = useState(errorValues);
 
@@ -39,7 +39,7 @@ export default function Login() {
       }
 
     return(
-      <form className='items-list-wrapper' onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <div className='register-wrapper'>            
         <label>Username:
           <input 
@@ -64,5 +64,5 @@ export default function Login() {
         </div>
       </form>
     )
-}
+};
 

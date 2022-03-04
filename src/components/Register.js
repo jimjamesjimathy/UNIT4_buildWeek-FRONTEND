@@ -16,7 +16,7 @@ const initialError ={
 }
 
 const Register = () => {
-  const { push } = useNavigate();
+  const navigate = useNavigate();
   const [ formValues, setFormValues ] = useState(initialFormValues);
   const [ error, setError ] = useState(initialError);
 
@@ -32,7 +32,7 @@ const Register = () => {
       axiosWithAuth().post(`${url}api/auth/register`, formValues)
         .then(res => {
           localStorage.setItem('token', res.data.token);
-          push('/login');
+          navigate('/');
         })
         .catch(err => {
           setError({
